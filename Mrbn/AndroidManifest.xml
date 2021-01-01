@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
-<manifest xmlns:a='http://schemas.android.com/apk/res/android' package='com.example.helloandroid' a:versionCode='0' a:versionName='0'>
+<manifest xmlns:a='http://schemas.android.com/apk/res/android' package='com.example.Mrbn' a:versionCode='0' a:versionName='0'>
     <application a:label='A Hello Android'>
-        <activity a:name='com.example.helloandroid.MainActivity'>
+        <activity a:name='com.example.Mrbn.MainActivity'>
              <intent-filter>
                 <category a:name='android.intent.category.LAUNCHER'/>
                 <action a:name='android.intent.action.MAIN'/>
