@@ -1,4 +1,4 @@
-export PROJ=/home/hezzie/myp/android/Mrbn 
+export PROJ=/home/hezzie/myp/android/
 
 cd ~/Android/Sdk/build-tools/28.0.3/             
 ./aapt package -f -m -J $PROJ/src -M $PROJ/AndroidManifest.xml -S $PROJ/res -I ~/Android/Sdk/platforms/android-28/android.jar
