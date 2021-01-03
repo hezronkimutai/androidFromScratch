@@ -1,4 +1,6 @@
 export PROJ=/home/hezzie/myp/android/
+export PATH=~/Android/Sdk/tools:$PATH
+export PATH=~/Android/Sdk/platform-tools:$PATH
 
 cd ~/Android/Sdk/build-tools/28.0.3/             
 ./aapt package -f -m -J $PROJ/src -M $PROJ/AndroidManifest.xml -S $PROJ/res -I ~/Android/Sdk/platforms/android-28/android.jar
@@ -11,15 +13,15 @@ javac -d obj -classpath src -bootclasspath ~/Android/Sdk/platforms/android-28/an
 cd ~/Android/Sdk/build-tools/28.0.3/   
 ./dx --dex --output=$PROJ/bin/classes.dex $PROJ/obj
 
-./aapt package -f -m -F $PROJ/bin/hello.unaligned.apk -M $PROJ/AndroidManifest.xml -S $PROJ/res -I ~/Android/Sdk/platforms/android-28/android.jar
+./aapt package -f -m -F $PROJ/bin/Mrbn.unaligned.apk -M $PROJ/AndroidManifest.xml -S $PROJ/res -I ~/Android/Sdk/platforms/android-28/android.jar
 cp $PROJ/bin/classes.dex .
-./aapt add $PROJ/bin/hello.unaligned.apk classes.dex
+./aapt add $PROJ/bin/Mrbn.unaligned.apk classes.dex
 
-./apksigner sign --ks mykey.keystore $PROJ/bin/hello.unaligned.apk
-
-
-./zipalign -f 4 $PROJ/bin/hello.unaligned.apk $PROJ/bin/hello.apk
+./apksigner sign --ks mykey.keystore $PROJ/bin/Mrbn.unaligned.apk
 
 
-adb install $PROJ/bin/hello.unaligned.apk
+./zipalign -f 4 $PROJ/bin/Mrbn.unaligned.apk $PROJ/bin/Mrbn.apk
+
+
+adb install $PROJ/bin/Mrbn.unaligned.apk
 adb shell am start -n com.example.Mrbn/.MainActivity
