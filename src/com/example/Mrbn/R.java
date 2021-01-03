@@ -11,12 +11,15 @@ public final class R {
     public static final class attr {
     }
     public static final class id {
-        public static final int button=0x7f040001;
-        public static final int text=0x7f040000;
+        public static final int b1=0x7f040002;
+        public static final int b2=0x7f040003;
+        public static final int b3=0x7f040004;
+        public static final int button=0x7f040005;
+        public static final int l1=0x7f040000;
+        public static final int l2=0x7f040001;
     }
     public static final class layout {
         public static final int activity_main=0x7f020000;
-        public static final int activity_sub=0x7f020001;
     }
     public static final class string {
         public static final int Mrbn_msg=0x7f030001;
