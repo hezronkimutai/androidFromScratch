@@ -28,4 +28,4 @@ cp $PROJ/bin/classes.dex .
 
 
 adb install $PROJ/bin/Mrbn.unaligned.apk
-adb shell am start -n com.example.Mrbn/.MainActivity
+adb shell am start -n com.example.Mrbn/.FirstScreenActivity

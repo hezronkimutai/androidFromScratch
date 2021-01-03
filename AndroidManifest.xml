@@ -2,10 +2,22 @@
 <manifest xmlns:a='http://schemas.android.com/apk/res/android' package='com.example.Mrbn' a:versionCode='0' a:versionName='0'>
     <application a:label='Mrbn'>
         <activity a:name='com.example.Mrbn.MainActivity'>
-             <intent-filter>
-                <category a:name='android.intent.category.LAUNCHER'/>
-                <action a:name='android.intent.action.MAIN'/>
-             </intent-filter>
+            <intent-filter>
+                <category a:name='android.intent.category.LAUNCHER' />
+                <action a:name='android.intent.action.MAIN' />
+            </intent-filter>
+        </activity>
+        <activity a:name='com.example.Mrbn.FirstScreenActivity'>
+            <intent-filter>
+                <category a:name='android.intent.category.LAUNCHER' />
+                <action a:name='android.intent.action.MAIN' />
+            </intent-filter>
+        </activity>
+        <activity a:name='com.example.Mrbn.SecondScreenActivity'>
+            <intent-filter>
+                <category a:name='android.intent.category.LAUNCHER' />
+                <action a:name='android.intent.action.MAIN' />
+            </intent-filter>
         </activity>
     </application>
 </manifest>
