@@ -1,3 +1,9 @@
+# Requirements
+
+- Java
+- Android sdk
+- Linux (But you can alter run.sh to suit your OS)
+
 # RUN
 - sudo chmod +x ./run.sh
 - ./run.sh

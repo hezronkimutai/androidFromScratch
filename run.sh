@@ -1,7 +1,11 @@
-export PROJ=/home/hezzie/myp/android/
+# path to app's root folder
+export PROJ=/home/hezzie/myp/android/ 
+
+# path to your android sdk fodler 
 export PATH=~/Android/Sdk/tools:$PATH
 export PATH=~/Android/Sdk/platform-tools:$PATH
 
+# 28.0.3 will vary according to ther version of your sdk 
 cd ~/Android/Sdk/build-tools/28.0.3/             
 ./aapt package -f -m -J $PROJ/src -M $PROJ/AndroidManifest.xml -S $PROJ/res -I ~/Android/Sdk/platforms/android-28/android.jar
 
