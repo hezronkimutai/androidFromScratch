@@ -14,3 +14,6 @@
 - https://developer.android.com/guide/topics/ui/declaring-layout#java
   
 - https://www.studytonight.com/android/hierarchical-arrangement-in-android
+
+## Styling 
+- https://developer.android.com/guide/topics/ui/look-and-feel/themes
