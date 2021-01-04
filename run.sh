@@ -3,6 +3,7 @@ export PROJ=/home/hezzie/myp/android/
 
 # path to your android sdk fodler 
 export PATH=~/Android/Sdk/tools:$PATH
+
 export PATH=~/Android/Sdk/platform-tools:$PATH
 
 # 28.0.3 will vary according to ther version of your sdk 
@@ -28,4 +29,5 @@ cp $PROJ/bin/classes.dex .
 
 
 adb install $PROJ/bin/Mrbn.unaligned.apk
+
 adb shell am start -n com.example.Mrbn/.FirstScreenActivity
